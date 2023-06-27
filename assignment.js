@@ -1,77 +1,72 @@
-//Write JS code that solve the following problems
-//Q1. Using an if-else statement, determine if a number is divisible by 3, by 5, or both.
+//Write JS code that solves the following problems
+
+//======================-=-==-=-=-=-=-=-=-=-=-=-=-=--
+
+//Q1. Using an if-else statement, determine if a number is divisible by 3, by 5 or both.
 
 let q1test = 15;
 
-if(q1test%3 == 0){      
-  console.log('even');  
-}
-
-else{
-  console.log('not divisible');
-}
-
-if (q1test%5 == 0){
-    console.log('another even!')
-}
-
-else {
-    console.log('not divisible')
-}
+if (q1 test % 3 === 0 && % 5 ===0) {
+    console.log("divisible by both!");
+} else if (q1test % 5 === 0) {
+    console.log("divisible by 5");
+} else if {q1 test % 3 === 0) {
+    console.log(divisible by 3");
+} else {
+  console.log("not divisible by 3, 5 or both");
 
 
-//Q2. Using an if-else statement, determin is a year is a leap year or not.
-//Research what are the conditions to be considered a leap year.
+//Q2. Using an if else statement, determine if a year is a leap year or not.
+//Research what is considered a leap year.
 
-let year = 1999;
-let yearA = 2000;
-let yearB = 1900;
-let yearC = 2024;
+// let year = 1999;
+ let year = 2000;
+// let year = 1900;
+// let year = 2024;
 
-if (year %4 == 0){
-    console.log('leap year!');
-}
-else{
-    console.log('not a leap year');
+/* A leap year is a 
+    * year that can divided by 4 evenly.
+    * except if it is divisible by 100.
+    * except if it is divisible by 400.
+
+    If is divisible by 4 then we must make check if it is divisible by 100. 
+    If it is then we must check if it is divisible by 400. 
+    If so then it is a leap year!
+
+*/
+
+
+if (year % 4 === 0) { 
+  if (year % 100 == 0) {
+    if (year % 400 === 0 {
+        console.log(`$(year) is NOT a leap year`);
+    } else { 
+        console.log(`$(year) is NOT a leap year`);
+    }
+  } else { 
+      console.log(`$(year) is a leap year!`);
+  }
+} else { 
+  console.log(`$(year) is NOT a leap year`);
 }
 
-if (yearA %4 ==  0){
-    console.log('leap year!');
-}
-else{
-    console.log('not a leap year');
-}
-
-if (yearB %4 == 0){
-    console.log('leap year!');
-}
-else{
-    console.log('not a leap year');
-}
-
-if (yearC %4 == 0) {
-    console.log('leap year!')
-}
-else{
-    console.log('not a leap year')
-}
 
 
 
 //Q3. Use a loop to print all the numbers from 1 to 100 that are divisible by 3 or 4.
-let q3;
 
-for(q3=1;q3<=100;q3=q3+1){
-    console.log(q3);
+//for loop
+for (let i = 0; i <= 100; i++) {
+    if (i % 4 === 0 || i % 3 === 0) {
+      console.log(i);
+    }
 }
 
-
-
-
-/***************************************************************************************
-*    Title: <stackoverflow> for 2.2 JS questions 1 & 2
-*    Author: <https://stackoverflow.com/users/6561907/edgar256>
-*    Date: <4-24-2019>
-*    Availability: <https://stackoverflow.com/questions/2821006/find-if-variable-is-divisible-by-2>
-*
-***************************************************************************************/
+//while loop
+let i = 0
+while (i <= 0) {
+  if (i % 4 === 0 || i % 3 === 0) {
+    console.log(i);
+  }
+  i++;
+}
